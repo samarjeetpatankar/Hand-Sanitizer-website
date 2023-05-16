@@ -1,11 +1,11 @@
 # Hand-Sanitizer-website
 
 Pages :
-Main Page
-Catalog
-Product Page
-Cart Page
-Checkout Page
+1. Main Page
+2. Catalog
+3. Product Page
+4. Cart Page
+5. Checkout Page
 
 Team Members 
 
