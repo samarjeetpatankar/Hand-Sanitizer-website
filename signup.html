@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .signupModal {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            visibility: hidden;
+            box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.4);
+            border-radius: 5px;
+            font-family: "helvetica neue", helvetica, arial, sans-serif;
+            /* Hidden by default */
+            /* position: fixed; */
+            /* Stay in place */
+            /* z-index: 1; */
+            /* Sit on top */
+            margin: auto;
+            /* margin-top: 50px; */
+            width: 30%;
+            /* Full width */
+            height: 95vh;
+            /* Full height */
+            overflow: hidden;
+            /* Enable scroll if needed */
+            /* background-color: rgb(0, 0, 0); */
+            /* Fallback color */
+            /* background-color: rgba(0, 0, 0, 0.4); */
+            /* Black w/ opacity */
+            padding: 20px;
+            padding-top: 10px;
+            padding-bottom: 0px;
+        }
+
+
+
+        #signupheader {
+            /* width:100%; */
+            text-align: center;
+            
+        }
+
+
+
+        #signupmiddle img {
+            width: 40%;
+            height: 30px;
+            left: 0;
+        }
+
+        #bold {
+            font-weight: bold;
+        }
+
+        #signupdetails {
+            justify-content: space-between;
+
+        }
+
+        #signupdetails>div {
+            display: flex;
+            width: 99%;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        #signupdetails #signupname input {
+            width: 44%;
+        }
+
+
+        #signupdetails input {
+            display: block;
+            border-width: thin;
+            border-style: solid;
+            border-color: rgb(189, 187, 187);
+            border-radius: 4px;
+            padding-left: 15px;
+            width: 95%;
+            height: 40px;
+            font-size: 14px;
+            margin-bottom: 15px;
+            ;
+            /* margin-right: 5px; */
+            /* justify-content: center; */
+        }
+
+        #signupterms {
+            font-size: 12px;
+            color: grey;
+        }
+
+        #signupterms a {
+            color: rgb(40, 100, 239);
+            text-decoration: none;
+        }
+
+
+
+        .signupModal button {
+            width: 50%;
+            height: 40px;
+            border-radius: 25px;
+            background-color: black;
+            color: #ffffff;
+            font-weight: bolder;
+        }
+
+        /* The Close Button */
+        .signupclose {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            /* border: 1px solid #27ae60; */
+            border-radius: 3px;
+            /* color: #27ae60; */
+            padding: 8px 10px;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        .signupclose:hover,
+        .signupclose:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="signupBtn">Modal</button>
+
+    <!-- The Modal -->
+    <div id="signupModal" class="signupModal">
+
+        <!-- Modal content -->
+        <div id="signupheader">
+            <h3>Create an Account</h3>
+            <span class="signupclose">&times;</span>
+            <!-- <label for="click" class="signupclose">&times;</label> -->
+        </div>
+        <div id="signupmiddle">
+            <img src="https://www.sephora.com/img/ufe/bi/logo-beauty-insider.svg">
+            <p>Join the Beauty Insider loyalty program. Earn points, get <span id="bold">FREE standard shipping</span> ,
+                redeem rewards, and
+                more.</p>
+            <div id="signupdetails">
+                <div id="signupname">
+                    <input type="text" id="lastName" placeholder="First Name">
+                    <input type="text" id="lastName" placeholder="Last Name">
+                </div>
+                <input type="text" id="email" placeholder="Enail Address">
+                <input type="text" id="pword" placeholder="Password (6 to 12 characters)">
+                <input type="text" id="phone" placeholder="Phone Number (optional)">
+                <input type="number" id="zipcode" placeholder="Zip Code (to hear about stores near you)">
+            </div>
+
+            <!-- <p>Enter your birthdate to receive a free gift every year.</p> -->
+
+            <!-- <div>
+                <select id="month">month</select>
+                <select name="day" id="date">Day</select>
+            </div> -->
+
+
+            <input type="checkbox" id="keepSigned" name="keepSigned">
+            <label for="keepSigned">Keep me signed in</label>
+        </div>
+        <p id="signupterms">By clicking “Join Now” you acknowledge that you are a U.S. or Canada resident and (1) have read Sephora’s<a href=""> Privacy Policy </a>and <a href="">Notice of Financial Incentive</a> , (2), agree to <span id="bold"><a href="">TERMS OF USE, BEAUTY INSIDER TERMS</a></span> , and to automatically receive Beauty Insider offers and notifications via email.</p>
+        
+        <button id="joinBtn">Join Now</button><br><br>
+        <hr>
+        <p id="signupterms">Sephora uses Google ReCaptcha and by registering, users are subject to Google’s <a href="">privacy policy</a> &  <a href="">terms</a>.</p>
+    </div>
+
+
+
+    </div>
+
+    </div>
+</body>
+<script>
+    // Get the modal
+    var signupModal = document.getElementById("signupModal");
+
+    // Get the button that opens the modal
+    var signupBtn = document.getElementById("signupBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("signupclose")[0];
+
+    // When the user clicks on the button, open the modal
+    signupBtn.onclick = function () {
+        signupModal.style.visibility = "visible";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        signupModal.style.visibility = "hidden";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == signupModal) {
+            signupModal.style.visibility = "hidden";
+        }
+    }
+
+
+</script>
+
+</html>

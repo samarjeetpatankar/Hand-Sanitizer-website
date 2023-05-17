@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+    <!-- <input type="checkbox" id="click"> -->
+    <!-- <label for="click" class="click-me">Sign In</label> -->
+    <button id="loginBtn">Sign in</button>
+    <div id="loginModal">
+        <!--      <div class="header"> 
+             <h2>Modal Popup</h2>
+             <label for="click" class="fas fa-times"></label>
+           </div>
+           <label for="click" class="fas fa-check"></label>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, cum!</p>
+           <div class="line"></div>-->
+
+        <div id="loginheader">
+            <h3>Sign In</h3>
+            <!-- <label for="click" class="close-btn">&times;</label> -->
+            <span class="loginclose">&times;</span>
+        </div>
+
+
+        <p>Sign in or create an account to enjoy <span id="freeShipping">FREE standard shipping</span> on all
+            orders.</p>
+        <div id="logindetails">
+            <input type="text" placeholder="Email Address*" id="email"><br>
+            <br>
+            <input type="text" placeholder="Password*" id="password">
+
+        </div>
+
+        <div id="logincheckbox">
+            <div>
+                <input type="checkbox" id="keepSigned" name="keepSigned">
+                <label for="keepSigned">Keep me signed in</label>
+            </div>
+            <div id="forgotPword">
+                <!-- <p>Forgot Password?</p> -->
+                <!-- <label for="forgotPword">forgot Password</label> -->
+                <a href="" style="text-decoration: none">Forgot password?</a>
+            </div>
+        </div>
+
+        <p id="loginterms">By clicking “Sign In”, you (1) agree to the current version of our <span id="bold"><a
+                    href="">TERMS OF USE</a></span>
+            and (2) have
+            read
+            Sephora's <a href="">Privacy Policy</a></p>
+        <button id="signinBtn">Sign In</button>
+
+        <hr>
+
+        <div id="loginfooter">
+            <p>New to Sephora?</p>
+            <!-- <button id="createBtn" onclick="">Create Account</button> -->
+            <button id="signupBtn" onclick="">Create Account</button>
+            <!-- <input type="checkbox" id="createBtn">
+        <label for="click" class="click-me">Create Account</label> -->
+
+        </div>
+
+    </div>
+    <!-- <button id="signupBtn">Modal</button> -->
+
+    <!-- The Modal -->
+    <div id="signupModal" class="signupModal">
+
+        <!-- Modal content -->
+        <div id="signupheader">
+            <h3>Create an Account</h3>
+            <span class="signupclose">&times;</span>
+            <!-- <label for="click" class="signupclose">&times;</label> -->
+        </div>
+        <div id="signupmiddle">
+            <img src="https://www.sephora.com/img/ufe/bi/logo-beauty-insider.svg">
+            <p>Join the Beauty Insider loyalty program. Earn points, get <span id="bold">FREE standard shipping</span> ,
+                redeem rewards, and
+                more.</p>
+            <div id="signupdetails">
+                <div id="signupname">
+                    <input type="text" id="firstName2" placeholder="First Name">
+                    <input type="text" id="lastName2" placeholder="Last Name">
+                </div>
+                <input type="text" id="email2" placeholder="Email Address">
+                <input type="text" id="password2" placeholder="Password (6 to 12 characters)">
+                <input type="text" id="phone2" placeholder="Phone Number (optional)">
+                <input type="number" id="zipcode2" placeholder="Zip Code (to hear about stores near you)">
+            </div>
+
+            <!-- <p>Enter your birthdate to receive a free gift every year.</p> -->
+
+            <!-- <div>
+                <select id="month">month</select>
+                <select name="day" id="date">Day</select>
+            </div> -->
+
+
+            <input type="checkbox" id="keepSigned" name="keepSigned">
+            <label for="keepSigned">Keep me signed in</label>
+        </div>
+        <p id="signupterms">By clicking “Join Now” you acknowledge that you are a U.S. or Canada resident and (1) have
+            read Sephora’s<a href=""> Privacy Policy </a>and <a href="">Notice of Financial Incentive</a> , (2), agree
+            to <span id="bold"><a href="">TERMS OF USE, BEAUTY INSIDER TERMS</a></span> , and to automatically receive
+            Beauty Insider offers and notifications via email.</p>
+
+        <button id="joinBtn">Join Now</button><br><br>
+        <hr>
+        <p id="signupterms">Sephora uses Google ReCaptcha and by registering, users are subject to Google’s <a
+                href="">privacy policy</a> & <a href="">terms</a>.</p>
+    </div>
+
+
+
+    </div>
+
+    </div>
+</body>
+
+<script type="module" src="login.js"></script>
+
+</html>
