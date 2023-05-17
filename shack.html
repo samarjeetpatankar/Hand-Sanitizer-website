@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/eed82eddcd.js" crossorigin="anonymous"></script>
     <style>
         #container{
     padding: 2px 70px;
@@ -17,6 +18,7 @@ img{
     width: 100%;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    position: relative;
     
 }
 
@@ -26,13 +28,27 @@ img{
     border-radius: 5px;
    
 }
+.cart-icon{
+    position: relative;
+       
+       top: -10%;
+       border: 1px solid red;
+      font-size: 30px;
+    float: right;
+       opacity: 0;
+     
+ }
 .detail{
      
      display: flex;
-     justify-content: space-between;
-     padding: 0 20px;
+     justify-content: space-around;
+     padding-left:20px;
     padding-bottom: 15px;
-     
+   
+ }
+ 
+ .cart-icon1{
+    opacity: 1;
  }
     </style>
 </head>
@@ -131,11 +147,12 @@ img{
             price: "1670$"
         },
     ]
-    if (currentOrder === 'asc') {
-    products.sort((a, b) => a.price - b.price);
-  } else if (currentOrder === 'desc') {
-    products.sort((a, b) => b.price - a.price);
-  }
+    
+//     if (currentOrder === 'asc') {
+//     products.sort((a, b) => a.price - b.price);
+//   } else if (currentOrder === 'desc') {
+//     products.sort((a, b) => b.price - a.price);
+//   }
 
 santDisplay(santData)
 function santDisplay(santData){
@@ -153,10 +170,27 @@ function santDisplay(santData){
 
       let price = document.createElement("p");
       price.textContent = elm.price  
+    let carticon  = document.createElement("div");
+    carticon.setAttribute("class","cart-icon");
+    // <i class="fa-light fa-bag-shopping" style="color: #5c374b;"></i>
+    // let i= document.createElement("i");
+    // i.setAttribute("class","fa-light")
+    // i.setAttribute("class","fa-bag-shopping")
+    // i.style.color="#5c374b"
+
+carticon.innerHTML= `<i class="fa-light fa-bag-shopping" style="color: #5c374b;"></i>`
+
   detail.append(name,price)
-card.append(img,detail)
+card.append(img,carticon,detail)
 document.getElementById("container").append(card)
-      
+card.addEventListener("mouseover",()=>{
+    carticon.classList.add("cart-icon1");
+    // price.style.marginRight= "-17px"
+})
+card.addEventListener("mouseout",()=>{
+    carticon.classList.remove("cart-icon1");
+    // price.style.marginRight= "10px"
+})
        
     })
 }

@@ -3,145 +3,216 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
     <title>catalog</title>
     <style>
-      @import url(https://fonts.googleapis.com/css?family=Bitter);
-#catalog-div{
+       
+      body{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+      }
+.catalog-div{
     padding: 2px 50px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    column-gap: 20px;
+    gap: 20px;
+ 
 }
+.card-img{
+    height: 80%;
+}
+ img{
 
-img{
     width: 100%;
-    height: 100%;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    
-}
-
-.card{
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    height: 85%;
-    border-radius: 5px;
-   
-}
-#image-div{
-    height: 85%;
+   height: 100%;
+  
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  
+ }
+ .overlay{
+    position:relative;
+     top: -60%;
      
+opacity: 0;
+ 
+padding: 0 30px;
+transform: translateY(70px);
+    transition: transform 1.2s;
+ 
+ 
+ }
+ a{
+    margin-left: 30%;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: rgb(230, 54, 35);
+    font-size: 20px; 
+    font-weight:400; 
 }
-.detail{
-     
+p{
+    font-size: 18px;
+}
+ .card-detail{
     display: flex;
     justify-content: space-between;
+    padding: auto;
     padding: 0 20px;
-   padding-bottom: 15px;
-   font-family: 'Bitter';
-}
-#ancor{
-    margin-top: 12px;
-    font-size: 20px;
-    color: orangered;
-    cursor: pointer;
     
-}
-.empty{
-    display: none;
-}
-.empty1{
-    display: inline;
-}
- 
- 
- 
+ }
+ .card{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    height: 430px;
+    border-radius: 7px;
+    margin-bottom: 30px;
+ }
+
+ .card-img:hover img{
+    opacity: 0.5;
+ }
+ .card-img:hover .overlay{
+    opacity: 1;
+    transform: translateY(0);
+ }
     </style>
 </head>
 <body>
-    <div id="catalog-div">
-         
+    <div class="catalog-div">
+         <div class="card">
+            <div class="card-img">
+                <img src="https://cdn.shopify.com/s/files/1/0511/9066/1293/products/064_f02a0b61-cc0d-4e6d-994a-9fa368f647d8.jpg?v=1651510078" alt="">
+                <div class="overlay">
+                    <p>A collection that will remind you of different times of the day</p>
+                    <a href="">See more ⇢</a>
+                </div>
+            </div>
+            <div class="card-detail">
+                <p> Daily moods</p>
+                <p> psc 8</p>
+            </div>
+         </div>
+         <div class="card">
+            <div class="card-img">
+                <img src="https://cdn.shopify.com/s/files/1/0511/9066/1293/products/63_c39641e2-de27-414f-8191-091de9f25cc0.jpg?v=1651509818" alt="">
+                <div class="overlay">
+                    <p> A collection that will remind you of different times of the day</p>
+                    <a href="">See more⇢</a>
+                </div>
+            </div>
+            <div class="card-detail">
+                <p>Shake it up</p>
+                <p> psc 12</p>
+            </div>
+         </div>
+          
+         <div class="card">
+            <div class="card-img">
+                <img src="https://cdn.shopify.com/s/files/1/0511/9066/1293/products/082.jpg?v=1651510073" alt="">
+                <div class="overlay">
+                    <p>A collection that will remind you of different times of the day</p>
+                    <a href="">See more ⇢</a>
+                </div>
+            </div>
+            <div class="card-detail">
+                <p>Blossom</p>
+                <p> psc 5</p>
+            </div>
+         </div>
+          
+         <div class="card">
+            <div class="card-img">
+                <img src="https://cdn.shopify.com/s/files/1/0511/9066/1293/products/054_a89c8ac7-8a0a-45c8-a551-86b9daf3899c.jpg?v=1651510003" alt="">
+                <div class="overlay">
+                    <p> A collection that will remind you of different times of the day</p>
+                    <a href="">See more ⇢</a>
+                </div>
+            </div>
+            <div class="card-detail">
+                <p>Accessories</p>
+                <p> psc 26</p>
+            </div>
+         </div>
+          
+         <div class="card">
+            <div class="card-img">
+                <img src="https://cdn.shopify.com/s/files/1/0511/9066/1293/products/091.jpg?v=1651509974" alt="">
+                <div class="overlay">
+                    <p> A collection that will remind you of different times of the day</p>
+                    <a href="">See more ⇢</a>
+                </div>
+            </div>
+            <div class="card-detail">
+                <p>Refills</p>
+               <p> psc 20</p>
+            </div>
+         </div>
+          
+         <div class="card">
+            <div class="card-img">
+                <img src="https://cdn.shopify.com/s/files/1/0511/9066/1293/products/HAAN_JULIO20224854.jpg?v=1651510633" alt="">
+                <div class="overlay">
+                    <p> A collection that will remind you of different times of the day</p>
+                    <a href="">See more ⇢</a>
+                </div>
+            </div>
+            <div class="card-detail">
+                <p>Hand Soap</p>
+                <p>psc 21</p>
+            </div>
+         </div>
+          
+
+          
     </div>
     <script>
-let catalogData = [
-    {
-       image:"https://cdn.shopify.com/s/files/1/0511/9066/1293/products/064_f02a0b61-cc0d-4e6d-994a-9fa368f647d8.jpg?v=1651510078",
-       category:"Daily moods",
-       pcs:8,
-    },
-    {
-       image:"https://cdn.shopify.com/s/files/1/0511/9066/1293/products/63_c39641e2-de27-414f-8191-091de9f25cc0.jpg?v=1651509818",
-       category:"Shake it up",
-       pcs:9,
-    },
-    {
-       image:"https://cdn.shopify.com/s/files/1/0511/9066/1293/products/082.jpg?v=1651510073",
-       category:"Blossom",
-       pcs:5,
-    },
-    {
-       image:"https://cdn.shopify.com/s/files/1/0511/9066/1293/products/054_a89c8ac7-8a0a-45c8-a551-86b9daf3899c.jpg?v=1651510003",
-       category:"Accessories",
-       pcs:26,
-    },
-    {
-       image:"https://cdn.shopify.com/s/files/1/0511/9066/1293/products/091.jpg?v=1651509974",
-       category:"Refills",
-       pcs:20,
-    },
-    {
-       image:"https://cdn.shopify.com/s/files/1/0511/9066/1293/products/HAAN_JULIO20224854.jpg?v=1651510633",
-       category:"Hand Soap",
-       pcs:21,
-    },
-]
+   
+   
 
-displaydata();
-function displaydata(){
-    catalogData.map(function(elm){
-        let card = document.createElement("div");
-        card.className ="card"
-        let img_div = document.createElement("div");
-        img_div.setAttribute("id","image-div")
-       let img = document.createElement("img");
-      img.src = elm.image;
-         img_div.append(img)
-      let detail = document.createElement("div");
-          detail.className = "detail"
-      let name = document.createElement("p");
-      name.textContent = elm.category;
+// displaydata();
+// function displaydata(){
+//     catalogData.map(function(elm){
+//         let card = document.createElement("div");
+//         card.className ="card"
+//         let img_div = document.createElement("div");
+//         img_div.setAttribute("class","image-div")
+//        let img = document.createElement("img");
+//       img.src = elm.image;
+//          img_div.append(img)
+//       let detail = document.createElement("div");
+//           detail.className = "detail"
+//       let name = document.createElement("p");
+//       name.textContent = elm.category;
 
-      let pcs = document.createElement("p");
-      pcs.textContent = elm.pcs +" "+"pcs"
+//       let pcs = document.createElement("p");
+//       pcs.textContent = elm.pcs +" "+"pcs"
 
-      let emptydiv = document.createElement("div");
+//       let emptydiv = document.createElement("div");
       
-      emptydiv.setAttribute("class","empty");
-      let p = document.createElement("p");
-      p.setAttribute("id","ancor")
-      p.textContent = "see" +" ⇢"
-      emptydiv.append(p);
-card.addEventListener("click",()=>{
-    window.location.href= "shack.html"
-})
+//       emptydiv.setAttribute("class","empty");
+//       let p = document.createElement("p");
+//       p.setAttribute("class","ancor")
+//       p.textContent = "see" +" ⇢"
+//       emptydiv.append(p);
+// card.addEventListener("click",()=>{
+//     window.location.href= "shack.html"
+// })
 
-card.addEventListener("mouseover",()=>{
-emptydiv.classList.add("empty1")
-})
+// card.addEventListener("mouseover",()=>{
+// emptydiv.classList.add("empty1")
+// })
 
-card.addEventListener("mouseleave",()=>{
-    emptydiv.classList.remove("empty1")
-})
+// card.addEventListener("mouseleave",()=>{
+//     emptydiv.classList.remove("empty1")
+// })
  
 
-      detail.append(name,emptydiv,pcs);
+//       detail.append(name,emptydiv,pcs);
 
-      card.append(img_div,detail);
-      document.getElementById("catalog-div").append(card);
+//       card.append(img_div,detail);
+//       document.getElementByclass("catalog-div").append(card);
 
-    })
+//     })
 
-}
+// }
     </script>
 </body>
 </html>
