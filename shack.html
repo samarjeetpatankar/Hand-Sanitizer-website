@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+    padding: 2px 70px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+     gap: 20px;
+}
+
+img{
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    
+}
+
+.card{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+ 
+    border-radius: 5px;
+   
+}
+.detail{
+     
+     display: flex;
+     justify-content: space-between;
+     padding: 0 20px;
+    padding-bottom: 15px;
+     
+ }
+    </style>
+</head>
+<body>
+     <div id="top-bar">
+        <div>
+            <h1>SHAKE IT UP</h1>
+        </div>
+        <div>
+            <img src="" alt="">
+        </div>
+        <div>
+            <p>
+
+            </p>
+        </div>
+     </div>
+     <div id="container">
+
+     </div>
+</body>
+</html>
+<script>
+    let santData = [
+        {
+            image:"https://cdn.shopify.com/s/files/1/0511/9066/1293/products/Pack3_SA_MF.jpg?v=1678874635",
+            name:"3 Hand Sanitizers Mystic Foliage",
+            price: "1590$"
+        },
+        {
+            image:"https://cdn.shopify.com/s/files/1/0511/9066/1293/products/Pocket_SA_MF_TalesLotus_1.jpg?v=1678356415",
+            name:"Hand Sanitizer Tales of Lotus",
+            price: "130$"
+        },
+        {
+            image:"https://cdn.shopify.com/s/files/1/0511/9066/1293/products/Pocket_SA_MF_ForestGrace.jpg?v=1678356444",
+            name:"Hand Sanitizer Forest Grace",
+            price: "1730$"
+        },
+        {
+            image:"https://cdn.shopify.com/s/files/1/0511/9066/1293/products/Pocket_SA_MF_WildOrchid_5052f880-3d50-4442-82d2-e3c4eebc8159.jpg?v=1678356511",
+            name:"Hand Sanitizer Wild Orchid",
+            price: "170$"
+        },
+        {
+            image:"https://cdn.shopify.com/s/files/1/0511/9066/1293/products/064_f02a0b61-cc0d-4e6d-994a-9fa368f647d8.jpg?v=1651510078",
+            name:"Hydrating Hand Sanitizer - Blossom Elixir 5 Pack",
+            price: "1170$"
+        },
+        {
+            image:"https://cdn.shopify.com/s/files/1/0511/9066/1293/products/062_736773a1-2164-4170-9ef2-925154e35d00.jpg?v=1651509382",
+            name:"Hydrating Hand Sanitizer - Daily Moods 5 Pack",
+            price: "1670$"
+        },
+        {
+            image:"https://cdn.shopify.com/s/files/1/0511/9066/1293/products/CN_50b43280-f266-4dc9-9f27-00d2ce9d183e.jpg?v=1651510905",
+            name:"Hand Sanitizer Citrus Noon",
+            price: "190$"
+        },
+        {
+            image:"https://cdn.shopify.com/s/files/1/0511/9066/1293/products/manhattan_1fb47322-02d9-47ee-b4d5-22c5253f93d4.jpg?v=1651510921",
+            name:"Hand Sanitizer Manhattan Glacé",
+            price: "198$"
+        },
+        {
+            image:"https://cdn.shopify.com/s/files/1/0511/9066/1293/products/Pocket_SA_MF_ForestGrace.jpg?v=1678356444",
+            name:"Hand Sanitizer Forest Grace",
+            price: "1730$"
+        },
+        {
+            image:"https://cdn.shopify.com/s/files/1/0511/9066/1293/products/Pocket_SA_MF_ForestGrace.jpg?v=1678356444",
+            name:"Hand Sanitizer Forest Grace",
+            price: "1730$"
+        },
+        {
+            image:"https://cdn.shopify.com/s/files/1/0511/9066/1293/products/MG_d9ae8cda-5e84-40c8-9f4d-4ab6da7e3efc.jpg?v=1651510911",
+            name:"Hand Sanitizer Morning Glory",
+            price: "1170$"
+        },
+        {
+            image:"https://cdn.shopify.com/s/files/1/0511/9066/1293/products/SPICY_da1f74d2-832f-4c08-8d3d-a60b048f8b78.jpg?v=1651510930",
+            name:"Hand Sanitizer Spicy Ginger Ale",
+            price: "1670$"
+        },
+    ]
+    if (currentOrder === 'asc') {
+    products.sort((a, b) => a.price - b.price);
+  } else if (currentOrder === 'desc') {
+    products.sort((a, b) => b.price - a.price);
+  }
+
+santDisplay(santData)
+function santDisplay(santData){
+    santData.map((elm)=>{
+        let card = document.createElement("div");
+        card.className ="card"
+         
+       let img = document.createElement("img");
+      img.src = elm.image;
+         
+      let detail = document.createElement("div");
+          detail.className = "detail"
+      let name = document.createElement("p");
+      name.textContent = elm.name;
+
+      let price = document.createElement("p");
+      price.textContent = elm.price  
+  detail.append(name,price)
+card.append(img,detail)
+document.getElementById("container").append(card)
+      
+       
+    })
+}
+</script>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>catalog</title>
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Bitter);
+#catalog-div{
+    padding: 2px 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 20px;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    
+}
+
+.card{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    height: 85%;
+    border-radius: 5px;
+   
+}
+#image-div{
+    height: 85%;
+     
+}
+.detail{
+     
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+   padding-bottom: 15px;
+   font-family: 'Bitter';
+}
+#ancor{
+    margin-top: 12px;
+    font-size: 20px;
+    color: orangered;
+    cursor: pointer;
+    
+}
+.empty{
+    display: none;
+}
+.empty1{
+    display: inline;
+}
+ 
+ 
+ 
+    </style>
+</head>
+<body>
+    <div id="catalog-div">
+         
+    </div>
+    <script>
+let catalogData = [
+    {
+       image:"https://cdn.shopify.com/s/files/1/0511/9066/1293/products/064_f02a0b61-cc0d-4e6d-994a-9fa368f647d8.jpg?v=1651510078",
+       category:"Daily moods",
+       pcs:8,
+    },
+    {
+       image:"https://cdn.shopify.com/s/files/1/0511/9066/1293/products/63_c39641e2-de27-414f-8191-091de9f25cc0.jpg?v=1651509818",
+       category:"Shake it up",
+       pcs:9,
+    },
+    {
+       image:"https://cdn.shopify.com/s/files/1/0511/9066/1293/products/082.jpg?v=1651510073",
+       category:"Blossom",
+       pcs:5,
+    },
+    {
+       image:"https://cdn.shopify.com/s/files/1/0511/9066/1293/products/054_a89c8ac7-8a0a-45c8-a551-86b9daf3899c.jpg?v=1651510003",
+       category:"Accessories",
+       pcs:26,
+    },
+    {
+       image:"https://cdn.shopify.com/s/files/1/0511/9066/1293/products/091.jpg?v=1651509974",
+       category:"Refills",
+       pcs:20,
+    },
+    {
+       image:"https://cdn.shopify.com/s/files/1/0511/9066/1293/products/HAAN_JULIO20224854.jpg?v=1651510633",
+       category:"Hand Soap",
+       pcs:21,
+    },
+]
+
+displaydata();
+function displaydata(){
+    catalogData.map(function(elm){
+        let card = document.createElement("div");
+        card.className ="card"
+        let img_div = document.createElement("div");
+        img_div.setAttribute("id","image-div")
+       let img = document.createElement("img");
+      img.src = elm.image;
+         img_div.append(img)
+      let detail = document.createElement("div");
+          detail.className = "detail"
+      let name = document.createElement("p");
+      name.textContent = elm.category;
+
+      let pcs = document.createElement("p");
+      pcs.textContent = elm.pcs +" "+"pcs"
+
+      let emptydiv = document.createElement("div");
+      
+      emptydiv.setAttribute("class","empty");
+      let p = document.createElement("p");
+      p.setAttribute("id","ancor")
+      p.textContent = "see" +" ⇢"
+      emptydiv.append(p);
+card.addEventListener("click",()=>{
+    window.location.href= "shack.html"
+})
+
+card.addEventListener("mouseover",()=>{
+emptydiv.classList.add("empty1")
+})
+
+card.addEventListener("mouseleave",()=>{
+    emptydiv.classList.remove("empty1")
+})
+ 
+
+      detail.append(name,emptydiv,pcs);
+
+      card.append(img_div,detail);
+      document.getElementById("catalog-div").append(card);
+
+    })
+
+}
+    </script>
+</body>
+</html>
