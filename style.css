@@ -304,10 +304,11 @@
   .about-us > h1{
     font-size: 59px;
     margin-left: 90px;
+    margin-bottom : 30px;
   }
 
   .aboutus-img {
-    width: 1400px;
+    width: 450px;
     border: 1px solid black;
   }
 
@@ -316,15 +317,169 @@
     font-size: 18px;
   }
 
-  .aboutus-para-part{
-    padding: 70px;
+  .aboutus-para{
+      display: flex;
   }
+
+  #read-more{
+    height: 20px;
+    padding: 23px;
+    align-items: center;
+    margin-left: 66px;
+    margin-top: 150px;
+  }
+
+  .aboutus-para-part {
+   padding: 30px;
+   margin-left: 100px;
+   font-size: 20px;
+   text-align:  left;
+   line-height: 30px;
+}
+
+#para-gap{
+  margin-top: 12px;
+}
 
   .aboutus-img > img {
     width: 100%;
     height: 90%;
     object-fit: cover;
   }
+
+
+  /* categories part  */
+
+  .categories-part {
+    margin-top: 100px;
+    margin-bottom: 200px;
+  }
+
+  .categories-part > h1{
+    font-size: 59px;
+    margin-left: 90px;
+    margin-bottom : 30px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    /* grid-gap: 30px;  */
+    margin-left: 120px;
+    margin-right: 120px;
+  }
+  .grid-item{
+    height: 390px;
+    border: 1px solid black;
+    justify-content: center;
+    
+  }
+  .grid-item img{
+     height: 340px;
+     width: 100%;
+     border-bottom: 1px solid black;
+  } 
+
+  .grid-desc{
+      display: flex;
+      justify-content: space-between;
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-top: 8px;
+  }
+.empty-category{
+  border-bottom: 1px solid black;
+}
+
+.empty-category-p {
+  margin-left: 160px;
+  margin-top: 165px;
+  font-size: 20px;
+}
+
+.empty-category2 {
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+
+  .empty-category2-button {
+    margin-left: 35px;
+    padding: 30px;
+    border-radius: 60% 40% 40% 20%;
+    margin-top: 150px;
+  }
+
+ /* review part  */
+ .review-part {
+  margin-top: 50px;
+  margin-bottom: 200px;
+}
+
+.review-part > h1{
+  font-size: 59px;
+  margin-left: 90px;
+  margin-bottom : 30px;
+}
+
+.companies-logos{ 
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    justify-content: space-between;
+    height: 140px;
+    padding-left: 140px;
+}
+
+.companies-logos img{
+     margin-top: 43px;
+     margin-left: 50px;
+}
+
+.companies-logos img:first-child {
+  border-bottom: 2px solid black; 
+}
+
+.quote-part{
+  text-align: center;
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+
+/* instagram part */
+.instagram-part{
+  border: 1px solid black;
+}
+
+.instagram-part-grid-container{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.ip-grid-item{
+  border: 1px solid black;
+  height: 332px;
+}
+
+.ip-grid-item img{
+     height: 330px;
+     width: 100%;
+     
+}
+
+.ip-grid-item1{
+  width: 300px;
+  border: none;
+}
+
+ .ip-grid-item1 h1{
+      font-size: 65px;
+      margin-top: 70px;
+      margin-left: 100px;
+}
+
+.ip-grid-item1 h3 {
+  margin-left: 100px;
+}
 
   /* Footer part  */
 .footer {
