@@ -8,7 +8,7 @@
     width: 100%;
     border: 2px solid red;
 }
-#letf{
+#left{
     width: 50%;
     border: 2px solid green;
 }
@@ -17,4 +17,16 @@
     border: 2px solid yellow;
     display: flex;
     flex-direction: row;
+}
+.data{
+    display: flex;
+    align-items: center;
+}
+.imageDiv{
+    flex:0 0 auto;
+    border:2px solid brown;
+    width: 100%;
+}
+.details{
+    flex: 1;
 }
