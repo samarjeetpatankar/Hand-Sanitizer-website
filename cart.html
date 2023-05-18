@@ -6,28 +6,174 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Shopping Cart - Haan Ready</title>
     <link rel="stylesheet" href="./cart.css">
+    <script src="https://kit.fontawesome.com/adb97210e8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    
 </head>
 <body>
-    <div id="navbar"></div>
-    <div id="empty"><h3>My Cart Page</h3></div>
-    <div id="parent">
-        <div id="left"></div>
-        <div id="right">
-            <div id="cart">Cart</div>
-            <div class="data">
-                <div class="imageDiv">
-                    <img src="">
-                </div>
-                <div class="details">
-                    <h3>Gentle Paloma</h3>
-                    <p>Hand sanetizer</p>
-                    <div>-1+</div>
-                    <p>2099$</p>
-                    <button>remove</button>
-                </div>
+    <!-- Navbar -->
+    <header class="header">
+        <nav class="navbar">
+          <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+         </div>
+            <ul class="nav-menu">
+              <li class="nav-items">
+                  <a href="#" class="nav-links"><i class="fa-solid fa-bars"></i></a>
+              </li>
+              <li class="nav-items">
+                  <a href="#" class="nav-links">Best Sellers</a>
+              </li>
+              <li class="nav-items">
+                  <a href="#" class="nav-links">Hand Sanitizer</a>
+              </li>
+              <li class="nav-items">
+                  <a href="#" class="nav-links">Hand Cream</a>
+              </li>
+              <li class="nav-items">
+                  <a href="#" class="nav-links">Refills</a>
+              </li>
+              <li class="nav-items">
+                   <img id="logo-image" src="https://cdn.shopify.com/s/files/1/0511/9066/1293/files/logo_han.png?v=1651046048" alt="">  
+               </li>
+               <li class="nav-items">
+                  <a href="#" class="nav-links">Toothpaste</a>
+              </li>
+              <li class="nav-items">
+                  <a href="#" class="nav-links">Hand Soap</a>
+              </li>
+              <li class="nav-items">
+                  <a href="#" class="nav-links">Combos</a>
+              </li>
+          
+            </ul>
+            <a href="#" class="nav-links"><i class="fa-regular fa-user"></i></a>
+            <a href="#" class="nav-links"><i class="fa-solid fa-bag-shopping"></i></a>      
+        </nav>
+    </header>
+    <!-- Navbar end -->
+    <!-- Cart Page Start -->
+    <div id="cartLeft">
+        <div id="cart-container">
+            <h2>Cart</h2>
+            <table id="cart-table">
+              <thead>
+                <tr>
+                  <th>PRODUCT</th>
+                  <th>QUANTITY</th>
+                  <th>TOTAL</th>
+                </tr>
+              </thead>
+              <tbody id="cart-items">
+                <!-- Cart items will be dynamically added here -->
+              </tbody>
+            </table>
+          </div>
+    </div>
+    <!-- <div id="parent">
+        <div>
+            <h3>Your Basket</h3>
+           
+            <div id="tablediv">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Items - <span id="countitems">0</span></th>
+                            <th>Quantity</th>
+                            <th>Sub-Total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody"></tbody>
+                </table>
+                 <div id="checkbox">
+                <p>Subtotal : <span id="showtotal">0</span></p>
+                <a href="paymentpage.html"><button>Checkout</button></a>
+            </div>
             </div>
         </div>
     </div>
+ -->
+    <!-- Cart page End -->
+    <!-- Footer Start -->
+    <footer class="footer">
+        <div class="footer-categories">
+          <div class="footer-parts">
+            <div class="footer-catalog">
+                <h2>Catalog</h2>
+                <p>Best Seller</p>
+                <p>Hand Sanitizer</p>
+                <p>Hand Cream</p>
+                <p>Hand Soap</p>
+                <p>Toothpaste</p>
+                <p>Refills</p>
+                <p>Combos</p>
+            </div>
+            <div class="customer-info">
+                <h2>Customer Info</h2>
+                <p>About us & our purpose</p>
+                <p>Stocklist</p>
+                <p>Journal</p>
+                <p>FAQS</p>
+                <p>Contact</p>
+                <p>For Business</p>
+            </div>
+            <div class="legal-pages">
+                 <h2>Legal Pages</h2>
+                 <p>Deliveries & Returns</p>
+                 <p>Terms & Conditions</p>
+                 <p>Refund Policy</p>
+                 <p>Privacy Policy</p>
+            </div> 
+          </div>
+          <div class="footer-right-part">
+             <h2 class="footer-right-part-header">Sign up for updates</h2>
+            <div class="signup">
+               
+                <input type="text" placeholder="Email address">
+                <button class="arrow-button"><i class="fa-solid fa-arrow-right"></i></button>
+              </div>
+              
+            <div class="social-media">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+          </div>
+        </div>
+        <p class="footer-p">(C) 2023 All right reserved</p>
+      </footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js"></script>
+      <!-- Footer End -->
     <script src="cart.js" type="module"></script>
 </body>
 </html>
+<script>
+        const hamburger = document.querySelector(".hamburger")
+        const navMenu = document.querySelector(".nav-menu")
+
+        hamburger.addEventListener("click" , () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        })
+
+        document.querySelectorAll(".nav-links").forEach(n => n.addEventListener("click", () => {
+        hamburger.classList.remove("active")
+        navMenu.classList.remove("active")
+        })) 
+
+        
+        $('.main-carousel').flickity({
+        // options
+        cellAlign: 'left',
+        wrapAround: true,
+        freeScroll: true
+        });
+
+
+</script>
