@@ -3,6 +3,8 @@
     margin: 0;
     box-sizing: border-box;
   }
+
+  /* navbar part  */
   
   .header {
     background-color: white;
@@ -87,6 +89,8 @@
      border-right: 1px solid black;
      padding-right: 50px;
   }
+
+  /* Go to catalog part */
   
   .go-to-catalog{
     display: flex;
@@ -187,6 +191,142 @@
      height: 70px;
   }
 
+  /* Best sellers */
+.best-sellers{
+    height: 550px;
+    margin-top: 90px;
+}
+
+.best-sellers h1{
+    font-size: 59px;
+    margin-left: 90px;
+    margin-bottom: 20px;
+}
+
+.main-carousel{
+    width: 80%;
+    margin-left: 150px;
+}
+.cell {
+    width: 33%;
+    height: 350px;
+    margin: 0 15px;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  .cell img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+  }
+  
+  .img-p {
+    background-color: aquamarine;
+    margin-top: 10px; /* Adjusted margin value */
+    height: 80px; /* Adjusted height value */
+  }
+  
+
+/* New Products  */
+
+.new-products{
+    height: 550px;
+    margin-top: 10px;
+}
+
+.new-products h1 {
+    font-size: 59px;
+    margin-left: 90px;
+    margin-bottom: 29px;
+}
+
+.new-products-div{
+    height: 410px;
+    border: 1px solid black;
+    display: flex;
+    width: 110%;
+}
+
+    .new-products-div1{
+        height: 410px;
+        width: 360px;
+    }
+
+    .new-products-div2{
+        height: 410px;
+        width: 390px;
+        border-left: 1px solid black;
+    }
+
+    .new-products-div2 > img{
+        height: 408px;
+        width: 390px;
+    }
+    .new-products-div3{
+        border-right: 1px solid black;
+        border-left: 1px solid black;
+    }
+    .new-products-div3 > img{
+        height: 360px;
+        width: 360px;
+        border-bottom: 1px solid black;
+    }
+
+    .new-products-div4 > img{
+        height: 408px;
+        width: 390px;
+    }
+
+    .np-ptag{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 12px 0 12px;
+    }
+
+    .new-products-div3 > p {
+        margin-left: 12px;
+        
+    }
+
+  /* About us part */
+
+  .about-us{
+      margin-top: 45px;
+  }
+  .aboutus-div{
+    height: 390px;
+    border: 1px solid black;
+    display: flex;
+    
+  }
+
+  .about-us > h1{
+    font-size: 59px;
+    margin-left: 90px;
+  }
+
+  .aboutus-img {
+    width: 1400px;
+    border: 1px solid black;
+  }
+
+  .aboutus-p{
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .aboutus-para-part{
+    padding: 70px;
+  }
+
+  .aboutus-img > img {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+  }
+
+  /* Footer part  */
 .footer {
     border-top: 1px solid black;
     margin-top: 50px;
