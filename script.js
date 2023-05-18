@@ -9,7 +9,7 @@ hamburger.addEventListener("click" , () => {
 document.querySelectorAll(".nav-links").forEach(n => n.addEventListener("click", () => {
   hamburger.classList.remove("active")
   navMenu.classList.remove("active")
-}))
+})) 
 
  
 $('.main-carousel').flickity({
