@@ -11,7 +11,7 @@ document.querySelectorAll(".nav-links").forEach(n => n.addEventListener("click",
   navMenu.classList.remove("active")
 }))
 
-
+ 
 $('.main-carousel').flickity({
   // options
   cellAlign: 'left',
