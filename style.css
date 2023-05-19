@@ -446,7 +446,7 @@
  /* review part  */
  .review-part {
   margin-top: 50px;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 
 .review-part > h1{
@@ -482,6 +482,7 @@
 /* instagram part */
 .instagram-part{
   border: 1px solid black;
+  margin-bottom: 100px;
 }
 
 .instagram-part-grid-container{
