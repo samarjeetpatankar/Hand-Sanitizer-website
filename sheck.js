@@ -197,7 +197,7 @@ document.querySelector("select").addEventListener("click", () => {
 santDisplay(santData);
 function santDisplay(santData) {
   document.getElementById("container").innerHTML = "";
-  santData.map((elm) => {
+  santData.map((elm,index) => {
     let card = document.createElement("div");
     card.className = "card";
 
@@ -218,14 +218,16 @@ function santDisplay(santData) {
 
     carticon.innerHTML = `<i class="fas fa-shopping-bag" style="color: #E0115F;"></i>`;
     // carticon.append(i)
-    carticon.addEventListener("click", () => {
+    carticon.addEventListener("click", ()=>{
       adding(elm);
     });
     detail.append(name, price);
     card.append(img, carticon, detail);
     document.getElementById("container").append(card);
     card.addEventListener("click", () => {
-      window.location.href = "productpage.html";
+      if(index ==0){
+        window.location.href = "productpage.html"
+      }
     });
   });
 }
@@ -273,7 +275,7 @@ function tredDisplay(trendingItem) {
   });
 }
 
-let cartItems = localStorage.getItem("cartitem") || [];
+let cartItems = JSON.parse(localStorage.getItem("cartitem")) || [];
 function adding(el) {
   cartItems.push(el);
   localStorage.setItem("cartitem", JSON.stringify(cartItems));

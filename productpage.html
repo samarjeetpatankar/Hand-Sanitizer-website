@@ -6,9 +6,151 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Details</title>
     <link rel="stylesheet" href="productpage.css" />
+    <script
+      src="https://kit.fontawesome.com/adb97210e8.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <style>
+      .header {
+        background-color: white;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+
+      li {
+        list-style: none;
+      }
+
+      a {
+        color: black;
+        text-decoration: none;
+      }
+
+      .navbar {
+        min-height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 24px;
+        border-bottom: 1px solid black;
+        font-size: 16px;
+      }
+
+      .nav-menu {
+        display: flex;
+        min-height: 70px;
+        justify-content: space-between;
+        align-items: center;
+        gap: 45px;
+        margin-left: 30px;
+      }
+
+      .nav-items {
+        min-height: 70px;
+        border-right: 1px solid black;
+        padding-top: 30px;
+        margin-left: -15px;
+      }
+
+      .nav-links {
+        transition: 0.7s ease;
+        padding-right: 25px;
+      }
+
+      .nav-links:hover {
+        color: dodgerblue;
+      }
+
+      .hamburger {
+        display: none;
+        cursor: pointer;
+        background-color: black;
+      }
+
+      #logo-image {
+        height: 27px;
+        margin-right: 36px;
+        margin-top: -8px;
+      }
+
+      .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: white;
+      }
+
+      .fa-solid.fa-bars {
+        font-size: 36px;
+        margin-top: -10px;
+      }
+
+      .fa-regular.fa-user {
+        min-height: 70px;
+        /* margin-bottom: -59px; */
+        padding-top: 30px;
+        margin-left: 29px;
+        border-right: 1px solid black;
+        padding-right: 50px;
+      }
+    </style>
   </head>
   <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-items">
+            <a href="#" class="nav-links"><i class="fa-solid fa-bars"></i></a>
+          </li>
+          <li class="nav-items">
+            <a href="#" class="nav-links">Best Sellers</a>
+          </li>
+          <li class="nav-items">
+            <a href="#" class="nav-links">Hand Sanitizer</a>
+          </li>
+          <li class="nav-items">
+            <a href="#" class="nav-links">Hand Cream</a>
+          </li>
+          <li class="nav-items">
+            <a href="#" class="nav-links">Refills</a>
+          </li>
+          <li class="nav-items">
+            <img
+              id="logo-image"
+              src="https://cdn.shopify.com/s/files/1/0511/9066/1293/files/logo_han.png?v=1651046048"
+              alt=""
+            />
+          </li>
+          <li class="nav-items">
+            <a href="#" class="nav-links">Toothpaste</a>
+          </li>
+          <li class="nav-items">
+            <a href="#" class="nav-links">Hand Soap</a>
+          </li>
+          <li class="nav-items">
+            <a href="#" class="nav-links">Combos</a>
+          </li>
+        </ul>
+
+        <a href="login.html" target="_blank" class="nav-links"
+          ><i class="fa-regular fa-user"></i
+        ></a>
+        <a href="cart.html" class="nav-links"
+          ><i class="fa-solid fa-bag-shopping"></i
+        ></a>
+      </nav>
+    </header>
     <div id="parent">
       <div id="product-detail">
         <!--For Product Image -->
@@ -44,7 +186,7 @@
                 <span class="plus">+</span>
               </div>
               <h2 id="productPrice">₹ 20.99</h2>
-              <button>Add to cart</button>
+              <button id="addToCart">Add to cart</button>
             </div>
           </div>
           <div id="product-desc">

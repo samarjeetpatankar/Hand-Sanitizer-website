@@ -47,5 +47,17 @@ function updatePrice() {
   priceDisplay.textContent = "₹ " + (price * a).toFixed(2);
 }
 
+let itemforcart = {
+  id: 1,
+  image:
+    "https://cdn.shopify.com/s/files/1/0511/9066/1293/products/Pack3_SA_MF.jpg?v=1678874635",
+  name: "3 Hand Sanitizers Mystic Foliage",
+  price: 1590,
+};
 
-
+let cartItem = JSON.parse(localStorage.getItem("cartitem")) || [];
+let cartButton = document.getElementById("addToCart");
+cartButton.addEventListener("click", () => {
+  cartItem.push(itemforcart);
+  localStorage.setItem("cartitem", JSON.stringify(cartItem));
+});
