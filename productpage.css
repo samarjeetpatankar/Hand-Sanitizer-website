@@ -10,7 +10,7 @@ h1 {
 
 #parent {
   width: 100%;
-  height: 200vh;
+  height: fit-content;
 }
 #product-detail {
   display: flex;
@@ -23,14 +23,14 @@ h1 {
 
 #product-right {
   width: 56%;
-  height: 95vh;
+  height: 100vh;
   border: 2px solid grey;
   /* border-left: 0.5px solid grey; */
   /* background-color: blue; */
 }
 #product-left {
   width: 44%;
-  height: 95vh;
+  height: 100vh;
   border-top: 2px solid grey;
   border-left: 2px solid grey;
   border-bottom: 2px solid grey;
@@ -41,6 +41,9 @@ h1 {
 #product-left img {
   height: 100%;
   width: 100%;
+  /* New Changes for hover */
+  /* position: absolute;
+  left: 0; */
 }
 /* .sliderBtn {
 
@@ -72,7 +75,7 @@ h1 {
   text-align: left;
 }
 #product-details h1 {
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 600;
   padding: 0;
 }
@@ -190,3 +193,153 @@ hr {
 .num {
   font-size: 24px;
 }
+
+#otherDetailsHeading {
+  display: flex;
+  padding: 80px 0px 40px 80px;
+  gap: 40px;
+  align-items: flex-end;
+  /* margin-bottom: 60px; */
+}
+
+#otherDetails {
+  width: 100%;
+}
+#otherDetailsP {
+  padding-bottom: 15px;
+  font-weight: 500;
+}
+
+#otherDetailsHeading h1 {
+  font-size: 50px;
+  font-weight: 600;
+  /* padding: 0; */
+}
+
+#otherDetailsBox {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  border: 1px solid grey;
+  gap: 0px;
+}
+#emptyBox {
+  width: 7%;
+}
+
+#imageBox {
+  width: 398px;
+  height: fit-content;
+  border-left: 1px solid grey;
+}
+#imageBox img {
+  height: 398px;
+  width: 398px;
+}
+#fourBox {
+  width: 70%;
+  height: 400px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+#fourBox div {
+  border: 0.5px solid grey;
+  padding: 30px;
+  text-align: center;
+}
+
+#fourBox div h4 {
+  font-weight: 600;
+}
+
+#review h1 {
+  font-size: 50px;
+  font-weight: 600;
+  /* padding: 0; */
+}
+
+/* stARS */
+.rate {
+  float: left;
+  height: 46px;
+  padding: 0 10px;
+}
+.rate:not(:checked) > input {
+  position: relative;
+  /* bottom: -9999px; */
+  display: none;
+}
+.rate:not(:checked) > label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 30px;
+  color: #ccc;
+}
+.rate:not(:checked) > label:before {
+  content: "★ ";
+}
+.rate > input:checked ~ label {
+  color: #ffc700;
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: #deb217;
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}
+
+#review {
+  width: 100%;
+  margin-top: 80px;
+  /* margin-left: 100px; */
+}
+#reviewBox {
+  width: 100%;
+  /* margin-right: 50px;
+  */
+  /* margin-left: 10px; */
+  border: 1px solid grey;
+  display: flex;
+  height: 40vh;
+  margin-bottom: 20px;
+}
+#reviewBoxleft div {
+  display: flex;
+  /* padding: 30px; */
+}
+#reviewBoxleft {
+  width: 50%;
+  /* text-align: center; */
+  padding-left: 30px;
+}
+
+#reviewBoxRight {
+  border-left: 1px solid grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 100px;
+  padding-bottom: 50px;
+}
+
+#reviewBoxRight h3 {
+  padding-left: 110px;
+}
+
+#review h1 {
+  margin-left: 50px;
+}
+
+#rateRight{
+  margin: auto;
+}
+
+

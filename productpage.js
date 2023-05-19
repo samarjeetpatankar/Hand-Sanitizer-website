@@ -22,19 +22,30 @@ for (i = 0; i < acc.length; i++) {
 let plus = document.querySelector(".plus");
 let minus = document.querySelector(".minus");
 let num = document.querySelector(".num");
+let priceDisplay = document.getElementById("productPrice");
 let a = 1;
+let price = 20.99;
 plus.addEventListener("click", () => {
   a++;
   if (a == 1) {
-    num.innerHTML = "01";
+    num.innerHTML = a;
   }
-//   a = a < 10 ? "0" + a : a;
+  //   a = a < 10 ? "0" + a : a;
   num.innerHTML = a;
+  updatePrice();
 });
 minus.addEventListener("click", () => {
   if (a > 1) {
     a--;
     // a = a < 10 ? "0" + a : a;
     num.textContent = a;
+    updatePrice();
   }
 });
+
+function updatePrice() {
+  priceDisplay.textContent = "₹ " + (price * a).toFixed(2);
+}
+
+
+
