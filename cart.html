@@ -255,6 +255,27 @@
         background-color: rgb(245, 108, 69);
         border: 1px solid grey;
       }
+
+      #empty-cart{
+        padding: 210px;
+        font-size: 50px;
+        color: red;
+      }
+
+      #empty-shopping{
+        width: 25%;
+        height: 50px;
+        border-style: none;
+        position: absolute;
+        top: 55%;
+        right: 16%;
+        color: white;
+        cursor: pointer;
+        background-color: rgb(245, 108, 69);
+        border: 1px solid grey;
+        border-radius: 12px;
+        font-size: 20px;
+      }
     </style>
   </head>
 
@@ -395,9 +416,11 @@
     displayitem();
     displaytotal();
   } else {
-    document.getElementById("cart").innerHTML = `<h1> cart is empty <h1>`;
+    document.getElementById("cart").innerHTML = `<h1 id="empty-cart"> cart is empty <h1> <button id="empty-shopping">Shopping</button>` ;
   }
-
+  document.getElementById("empty-shopping").addEventListener("click", ()=>{
+     window.location.href="index.html"
+  })
   function displayitem() {
     document.getElementById("cart").innerHTML = "";
 
