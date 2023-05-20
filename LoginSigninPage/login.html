@@ -89,7 +89,9 @@
             console.log(loginArr[i].email,email,loginArr[i].password,password)
             if(loginArr[i].email==email && loginArr[i].password==password){
                 alert("Login Successfully Done");
-                window.location.href="/index.html"
+                localStorage.setItem("login", true)
+                window.location.href="../index.html"
+
                 break;
             }else{
                 if((loginArr.length-1)==i){

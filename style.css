@@ -82,7 +82,7 @@
 
   .fa-solid.fa-bars {
     font-size: 36px;
-    margin-top: -10px;
+
   }
 
   .fa-regular.fa-user{
@@ -92,6 +92,8 @@
      margin-left: 29px;
      border-right: 1px solid black;
      padding-right: 50px;
+     margin-top: -10px;
+      
   }
 
   /* Go to catalog part */
