@@ -1,0 +1,215 @@
+* {
+    box-sizing: border-box;
+  }
+  body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+      background-color: #f1f1f1; 
+  }
+  #nav{
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    position: fixed;
+    margin-top: -150px;
+    
+    
+}
+ img{
+    width: 500px;
+    height: 60px;
+    margin: 10px 0 0 -100px;
+    
+    
+}
+  
+  /* Add padding to containers */
+  .container {
+    width: 48%;
+    padding: 16px;
+    background-color: white;
+    /* border: 1px solid rebeccapurple; */
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+  }
+  
+  /* Full-width input fields */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  h3{
+      margin-top: 50px;
+      margin-bottom: 30px;
+  }
+  #socialconnect{
+    width: 90%;
+    height: 100px;
+    padding: 20px;
+    display: block;
+    display: flex;
+    margin: auto;
+    /* border: 1px solid rebeccapurple;   */
+   
+    }
+    .facebook{
+        width: 39%;
+        height: 90%;
+        display: block;
+        border: 1px solid black; 
+        display: flex; 
+    }
+    .fb{
+        width: 23%;
+        height: 30px; 
+        margin-left: 30px;
+        margin-top: 14px;
+    }
+    #ff{
+     color: gray;
+     font-weight: bold;
+     margin-top: 20px;
+     margin-left: 10px;
+    }
+    .google{
+       width: 39%;
+        height: 90%;
+        display: block;
+        border: 1px solid black; 
+        display: flex; 
+        margin-left: 45px;
+    }
+    .go{
+        width:25% ;
+        height: 35px;
+        margin-left: 30px;
+        margin-top: 14px;
+       
+        /* padding: 10px 0 0 20px; */
+    }
+    #gg{
+        color: gray;
+        margin-top: 20px;
+        margin-left: 10px;
+        font-weight: bold;
+    }
+  
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+  /* Set a style for the submit button */
+  .registerbtn {
+    background-color: #2E3337;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .registerbtn:hover {
+    opacity: 1;
+    color: #000;
+    background-color: turquoise;
+  }
+  
+  /* Add a blue text color to links */
+  a {
+    color:rgb(88, 87, 87);
+  }
+  p{
+      font-size: 20px;
+  }
+  
+
+  @media only screen and (max-width: 820px) {
+    img{
+        margin-left: 120px;
+    }
+
+    .container {
+      width: 90%;
+      font-size: 39px;
+    }
+
+    #socialconnect{
+      height: 129px;
+      width: 110%;
+    }
+
+    .fb{
+      height: 45px;
+    }
+
+    .go{
+      height: 45px;
+    }
+
+    input[type=text], input[type=password] {
+      margin-top: 20px;
+      font-size: 30px;
+    }
+    
+    input[type=text]:focus, input[type=password]:focus {
+      background-color: #ddd;
+      outline: none;
+      font-size: 20px;
+    }
+    
+    h3{
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    .registerbtn{
+      font-size: 39px;
+    }
+
+  }
+
+  @media only screen and (max-width: 500px) {
+    img{
+      margin-left: -50px;
+  }
+
+  .container {
+    width: 90%;
+    font-size: 20px;
+  }
+
+  #socialconnect{
+    height: 129px;
+    width: 129%;
+    font-size: 21px;
+    margin-left: -25px;
+  }
+
+  .fb{
+    margin-left: 7px;
+  }
+
+  .go{
+    margin-left: 5px;
+  }
+
+  }
+
+
+  
