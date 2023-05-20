@@ -225,7 +225,7 @@ function santDisplay(santData) {
     card.append(img, carticon, detail);
     document.getElementById("container").append(card);
     card.addEventListener("click", () => {
-      if(index ==0){
+      if(elm.id ==1){
         window.location.href = "productpage.html"
       }
     });

@@ -19,4 +19,10 @@ $('.main-carousel').flickity({
   freeScroll: true
 });
 
-
+let bool  = localStorage.getItem("login")
+// console.log(bool);
+if(bool == "true"){
+console.log("d");
+  let name  = localStorage.getItem("name");
+  document.querySelector(".logini").innerHTML = name
+}

@@ -94,6 +94,7 @@
     userArr.push(userInfo);
     localStorage.setItem("userInfo", JSON.stringify(userArr))
       alert("Registration Successfully Done")
+      localStorage.setItem("name", fullname)
       window.location.href = "login.html"
   }
 

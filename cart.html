@@ -299,23 +299,24 @@
             </div>
             <!-- contacts -->
             <div id="inputs">
-              <input type="text" placeholder="First Name" />
-              <input type="text" placeholder="Last Name" />
-              <input type="text" placeholder="Phone number" />
+              <input type="text" id="username" placeholder="First Name" />
+              <input type="text" id="userlast" placeholder="Last Name" />
+              <input type="number" id="phonenum" placeholder="Phone number" />
             </div>
 
             <!-- shippping -->
             <div id="shiping-input">
               <p>Shipping address</p>
               <div id="inputs1">
+               
                 <div>
-                  <input type="text" placeholder="Country" />
-                  <input type="text" placeholder="City" />
+                  <input type="text" id="country" placeholder="Country" />
+                  <input type="text" id="city" placeholder="City" />
                 </div>
                 <input type="text" id="address" placeholder="Street Address" />
                 <div>
-                  <input type="text" placeholder="Apt/Suit" />
-                  <input type="text" placeholder="Postal Code" />
+                  <input type="text" id="apt" placeholder="Apt/Suit" />
+                  <input type="number" id="postal" placeholder="Postal Code" />
                 </div>
               </div>
               <p>Shipping Method</p>
@@ -341,13 +342,13 @@
                 <div id="credit">
                   <div><input type="radio" /> <span> Credit card </span></div>
                 </div>
-                <div id="inputs2">
-                  <input type="text" placeholder="Card Number" />
+                <div id="inputs2"> 
+                  <input type="number" id="cardnum" placeholder="Card Number" />
                   <div>
-                    <input type="text" placeholder="Month" />
-                    <input type="text" placeholder="Year" />
+                    <input type="number" id="month" placeholder="Month" />
+                    <input type="number" id="year" placeholder="Year" />
                   </div>
-                  <input type="text" placeholder="CVV" />
+                  <input type="number" id="cvv" placeholder="CVV" />
                 </div>
               </div>
             </div>
@@ -417,10 +418,11 @@
     displaytotal();
   } else {
     document.getElementById("cart").innerHTML = `<h1 id="empty-cart"> cart is empty <h1> <button id="empty-shopping">Shopping</button>` ;
-  }
-  document.getElementById("empty-shopping").addEventListener("click", ()=>{
+      document.getElementById("empty-shopping").addEventListener("click", ()=>{
      window.location.href="index.html"
   })
+  }
+  
   function displayitem() {
     document.getElementById("cart").innerHTML = "";
 
