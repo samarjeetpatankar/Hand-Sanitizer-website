@@ -11,7 +11,7 @@ Welcome to the Hand Sanitizer Website! This platform was designed and developed 
 
 ## Design Inspiration
 
-The design of this website is based on a Behance project. You can find the design inspiration and details on Behance through the following link: [Design Link](https://www.behance.net/design-inspiration)
+The design of this website is based on a Behance project. You can find the design inspiration and details on Behance through the following link: [Design Link](https://www.behance.net/gallery/128485393/E-commerce-HAAN)
 
 ## Collaboration and Development
 
