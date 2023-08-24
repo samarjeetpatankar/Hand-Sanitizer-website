@@ -1,38 +1,24 @@
-Deploy Link : https://haan-website-clone-pt12.netlify.app/
-# Hand-Sanitizer-website
+# Hand Sanitizer Website
 
-Team Members 
+Welcome to the Hand Sanitizer Website! This platform was designed and developed as an online hub for hand sanitizer products. Offering a user-friendly interface for browsing and purchasing, this website aims to provide a seamless shopping experience for users.
 
-1. Samarjeet Patankar
-2. Gaurav Panchal
-3. Dipanshu Verma
-4. Kunal Goyal
-5. Aniket Dubey
+## Features
 
-Pages :
-1. Main Page - Samarjeet Patankar
-2. Catalog - Dipanshu Verma
-3. Product Page - Kunal Goyal
-4. Cart Page - Aniket Dubey & Gaurav Panchal
-5. Checkout Page - Gaurav Panchal
+- Browse and purchase a variety of hand sanitizer products.
+- User-friendly interface for easy navigation and product exploration.
+- Collaboration with a team for seamless integration and functionality.
+- Implementation of filtering and sorting features to enhance the user experience.
 
-Images Links
-1. Main Page : <br>
-[Image 1](https://mir-s3-cdn-cf.behance.net/project_modules/1400/c6d703128485393.6156f40426d13.png)<br>
-              [Image 2](https://mir-s3-cdn-cf.behance.net/project_modules/1400/b80255128485393.6156f40427ac7.png)
-              <br>
-              [Image 3](https://mir-s3-cdn-cf.behance.net/project_modules/1400/2f172b128485393.6156f404299cb.png)<br>
-  Responsives :  [Image 1](https://mir-s3-cdn-cf.behance.net/project_modules/1400/dbfecf128485393.6156f4042899a.png)<br>
+## Design Inspiration
 
-2. Catalog : <br>
-[Image 1](https://mir-s3-cdn-cf.behance.net/project_modules/1400/bc6636128485393.6156f404291b5.png)   
+The design of this website is based on a Behance project. You can find the design inspiration and details on Behance through the following link: [Design Link](https://www.behance.net/design-inspiration)
 
-3. Product Page : <br>
-[Image 1](https://mir-s3-cdn-cf.behance.net/project_modules/1400/0a3be3128485393.6156f404272cd.png)<br>
- Responsives :  [Image 1](https://mir-s3-cdn-cf.behance.net/project_modules/1400/c86b2e128485393.61aaa9b2a5dd1.jpg)<br>
+## Collaboration and Development
 
-4. Cart Page : <br>
-[Image 1](https://mir-s3-cdn-cf.behance.net/project_modules/1400/70da50128485393.6156f404256bf.png)<br>
+This project was a collaborative effort, with a team working together to ensure the integration and functionality of the website. The development process provided me with valuable experience in front-end development. I particularly focused on implementing filtering and sorting features to enhance the overall user experience.
 
-5. Checkout Page : <br>
-[Image 1](https://mir-s3-cdn-cf.behance.net/project_modules/1400/b875fe128485393.6156fae40ac5a.gif)
+## Live Website
+
+You can explore the live version of the Hand Sanitizer Website by visiting the following link: [Live Site](https://haan-website-clone-pt12.netlify.app/)
+
+Feel free to explore the website, check out the design inspiration, and reach out if you have any questions or feedback!
